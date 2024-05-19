@@ -3,6 +3,10 @@
     padding: 0%;
 }
 
+body{
+    font-family: "Roboto Mono", monospace;
+}
+
 
 .main {
     margin: 20px;
