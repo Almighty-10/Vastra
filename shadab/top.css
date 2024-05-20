@@ -53,6 +53,14 @@
     cursor: pointer;
     display: inline-block;
 }
+.heart{
+    height: 45px;
+    width: 45px;
+}
+.heart img{
+    height: 90%;
+    width: 90%;
+}
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1024px) {
