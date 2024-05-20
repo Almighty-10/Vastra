@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Cart</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="my-cart">My Cart</h1>
+
+        <div class="sections">
+            <div class="main-left">
+                <!-- Product 1 -->
+                <div class="pro-1">
+                    <img src="https://www.snitch.co.in/cdn/shop/files/9334bbb34130aa4f9621f4074ec674fe.webp?v=1715838963&width=1800" alt="project 1st Img">
+                    <div class="txt-cotent">
+                        <div class="pro-sec1">
+                            <h1>STRIPELUSH BLACK STRIPE SHIRT</h1>
+                            <h3>Size: L</h3>
+                            <h3>Color: Black</h3>
+                            <div class="remove">
+                                <h5>Remove</h5>
+                                <h5>Add to Wishlist</h5>
+                            </div>
+                        </div>
+                        <div class="pro-sec2">
+                            <input class="item-quantity" min="1" type="number" value="1">
+                            <h3>Rs. 1,499</h3>
+                            <h2 class="price">Rs. 1,099</h2>
+                            <h2 class="discount">You Save 27%</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Product 2 -->
+                <div class="pro-1">
+                    <img src="https://www.snitch.co.in/cdn/shop/products/4MSS1813-08-M2981_85c0257f-db01-40d6-9829-ac8d7f3abe1b.jpg?v=1682190863&width=1800" alt="project 1st Img">
+                    <div class="txt-cotent">
+                        <div class="pro-sec1">
+                            <h1>DOUBLE CUFF MAROON SHIRT</h1>
+                            <h3>Size: L</h3>
+                            <h3>Color: Maroon</h3>
+                            <div class="remove">
+                                <h5>Remove</h5>
+                                <h5>Add to Wishlist</h5>
+                            </div>
+                        </div>
+                        <div class="pro-sec2">
+                            <input class="item-quantity" min="1" type="number" value="1">
+                            <h3>Rs. 1,499</h3>
+                            <h2 class="price">Rs. 1,099</h2>
+                            <h2 class="discount">You Save 27%</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Product 3 -->
+                <div class="pro-1">
+                    <img src="https://www.snitch.co.in/cdn/shop/products/Augusto_28thDec9031.jpg?v=1673355934&width=1800">
+                    <div class="txt-cotent">
+                        <div class="pro-sec1">
+                            <h1>BUZAU BLACK SHIRT</h1>
+                            <h3>Size: L</h3>
+                            <h3>Color: Black</h3>
+                            <div class="remove">
+                                <h5>Remove</h5>
+                                <h5>Add to Wishlist</h5>
+                            </div>
+                        </div>
+                        <div class="pro-sec2">
+                            <input class="item-quantity" min="1" type="number" value="1">
+                            <h3>Rs. 1,499</h3>
+                            <h2 class="price">Rs. 1,099</h2>
+                            <h2 class="discount">You Save 27%</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="bill">
+                    <h1>The total amount of</h1>
+                    <div class="bill-data">
+                        <h4>Amount</h4>
+                        <span id="total-amount">0.00</span>
+                    </div>
+                    <div class="bill-data">
+                        <h4>CGST (9%)</h4>
+                        <span id="cgst-amount">0.00</span>
+                    </div>  
+                    <div class="bill-data">
+                        <h4>SGST (9%)</h4>
+                        <span id="sgst-amount">0.00</span>
+                    </div> 
+                    <hr>
+                    <div class="bill-data">
+                        <h4>Total</h4>
+                        <span id="final-total">0.00</span>
+                    </div> 
+                    <button>Go to Checkout</button>
+                </div>
+                <div class="apply-coupon">
+                    <h1>Apply Coupon</h1>
+                    <div class="fields">
+                        <input type="text" id="promo-code" placeholder="Promo Code">
+                        <h3 id="apply-coupon">Apply</h3>
+                    </div>
+                    <h3 class="invalid"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

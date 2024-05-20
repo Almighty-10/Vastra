@@ -1,0 +1,174 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: "Roboto Mono", monospace;
+}
+
+
+.main {
+    margin: 20px;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .my-cart {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.pro-1 {
+    display: flex;
+    max-width: 700px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.pro-1 .txt-cotent {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.pro-1 img {
+    height: 140px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.pro-sec1 {
+    margin-left: 10px;
+
+}
+
+.pro-sec1 h1 {
+    margin-bottom: 10px;
+}
+
+.pro-1 h1,
+h3 {
+    font-size: medium;
+}
+
+.remove {
+    display: flex;
+    gap: 10px;
+    max-width: 180px;
+    margin-top: 25px;
+}
+
+
+
+.pro-sec2 h3 {
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.pro-sec2 .discount {
+    color: #f9054c;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.pro-sec2 input {
+    max-width: 70px;
+}
+
+hr {
+    border: solid grey 0.1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    max-width: 700px;
+}
+
+.bill {
+    margin: 10px;
+    width: 340px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #ebebeb,
+        -5px -5px 10px #ffffff;
+}
+
+.bill h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.bill .bill-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill button {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #1466f2;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    color: white;
+}
+
+.apply-coupon {
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #ebebeb,
+        -5px -5px 10px #ffffff;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.apply-coupon input {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    width: 240px;
+}
+
+.fields {
+    display: flex;
+    align-items: center;
+}
+
+.fields h3 {
+    margin-left: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fields a {
+    text-decoration: none;
+
+}
+
+.invalid {
+    color: red;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .sections {
+        display: block;
+    }
+
+    .bill {
+        margin-top: 30px;
+        width: 285px;
+    }
+
+    .bill button {
+        width: 250px;
+    }
+}
