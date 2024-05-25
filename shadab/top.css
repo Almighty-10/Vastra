@@ -8,6 +8,15 @@ body {
     font-family: "Roboto Mono", monospace;
 }
 
+.top{
+    text-align: center;
+    font-weight: 100;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(178, 178, 178);
+    text-underline-offset: 5px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -16,11 +25,12 @@ body {
 }
 
 .box {
-    width: calc(23% - 60px); /* 4 divs in a row for larger screens */
-    height: 500px; 
+    width: calc(23% - 60px); 
+    height: 450px; 
     margin: 10px;
     padding: 10px; 
-    border: 1px solid #00000033;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px #0000001e ;
     text-align: center;
     border-radius: 10px;
     background-color: #fff;
@@ -41,30 +51,68 @@ body {
 }
 
 .content {
-    font-size: large;
+    font-size: x-large;
     color: #000;
     text-align: left;
 }
 
 .price {
-    font-size: 1em;
-    color: #000;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 1.5EM;
+    color: #000000ce;
     text-align: left;
 }
 
 
 .add_cart_btn {
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 8%;
+    font-size: 1.2em;
+    padding: 9px;
+    border-radius: 10px 10px;
     background-color: #000;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+    position: sticky;
 }
 
+.heart {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.heart img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .box {
+        width: calc(30% - 20px); 
+    }
+    .heart{
+        height: 35px;
+        width: 35px;
+    }
+    .price {
+        font-size: 1.1EM;
+    }
+    .content {
+        font-size: large;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: calc(50% - 20px);
+        height: calc(60% - 20px);
+    }
+    .heart{
+        height: 25px;
+        width: 25px;
+    }
+}
 /* Media queries for responsiveness */
 @media screen and (max-width: 1200px) {
     .add_cart_btn {
@@ -84,38 +132,5 @@ body {
     .add_cart_btn {
         font-size: 0.7em;
         padding: 6px;
-    }
-}
-
- .add_cart_btn:hover {
-    background-color: rgb(226, 0, 0);
-} 
-
-.heart {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.heart img {
-    height: 100%;
-    width: 100%;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 1200px) {
-    .box {
-        width: calc(30% - 20px); /* 3 divs in a row for mid-wide screens */
-    }
-    .heart{
-        width: calc(40% - 20px);
-        height: calc(20% - 20px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .box {
-        width: calc(50% - 20px); /* 2 div in a row for smaller screens */
-        height: calc(60% - 20px);
     }
 }
