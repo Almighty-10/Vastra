@@ -36,6 +36,7 @@ body {
     background-color: #fff;
     transition: background-color 0.3s;
     box-sizing: border-box;
+    position: relative;
 }
 
 
@@ -45,9 +46,8 @@ body {
 }
 
 .image {
-    height: 70%;
+    height: 75%;
     width: 100%;
-    object-fit: contain;
 }
 
 .content {
@@ -65,7 +65,8 @@ body {
 
 .add_cart_btn {
     font-size: 1.2em;
-    padding: 9px;
+    width:70%;
+    padding: 8px;
     border-radius: 10px 10px;
     background-color: #000;
     color: white;
@@ -74,63 +75,118 @@ body {
     position: sticky;
 }
 
+
 .heart {
-    height: 30px;
-    width: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 80%; 
+    bottom: 4%;
+    box-shadow: #0000003d 0px 0px 10px;
     cursor: pointer;
 }
 
 .heart img {
-    height: 100%;
-    width: 100%;
+    margin-top: 4px;
+    height: 80%;
+    width: 80%;
 }
 
 /* Media queries for responsiveness */
+/* 3 divs in a row for mid-wide screens */
 @media screen and (max-width: 1200px) {
     .box {
         width: calc(30% - 20px); 
+        height: 400px;
     }
-    .heart{
+    .heart {
         height: 35px;
         width: 35px;
+        bottom: 6%;
+        left: 75%;
     }
     .price {
-        font-size: 1.1EM;
+        font-size: 1.1em;
     }
     .content {
         font-size: large;
     }
-    
-}
-
-@media screen and (max-width: 480px) {
-    .box {
-        width: calc(50% - 20px);
-        height: calc(60% - 20px);
-    }
-    .heart{
-        height: 25px;
-        width: 25px;
-    }
-}
-/* Media queries for responsiveness */
-@media screen and (max-width: 1200px) {
     .add_cart_btn {
         font-size: 0.9em;
         padding: 8px;
     }
 }
 
+/* 2 divs in a row for smaller screens */
 @media screen and (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px);
+        height: calc(60% - 20px);
+    }
+    .heart {
+        height: 25px;
+        width: 25px;
+        bottom: 10px;
+        left: 75%;
+    }
     .add_cart_btn {
         font-size: 0.8em;
         padding: 7px;
     }
 }
 
+/* 1 div in a row for very small screens */
 @media screen and (max-width: 480px) {
     .add_cart_btn {
         font-size: 0.7em;
         padding: 6px;
+    }
+}
+
+
+/* 1 div in a row for very small screens like mobile watches */
+@media screen and (max-width: 320px) {
+    .box {
+        width: calc(100% - 20px); /* Full width minus margin */
+        height: 100px; /* Adjust height to content */
+    }
+    .heart {
+        height: 20px;
+        width: 20px;
+        bottom: 10px;
+        left: 75%;
+        bottom: 2%; /* Adjust positioning to fit layout */
+    }
+
+    .image {
+        height: 70%;
+        width: 100%;
+    }
+    
+    .content {
+        font-size: 0.2EM;
+        color: #000;
+        text-align: left;
+    }
+    
+    .price {
+        font-size: 0.2EM;
+        color: #000000ce;
+        text-align: left;
+    }
+    
+    
+    .add_cart_btn {
+        font-size: 0.4em;
+        width:70%;
+        padding: 2px;
+        border-radius: 5px 5px;
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: sticky;
     }
 }
