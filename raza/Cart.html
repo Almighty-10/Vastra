@@ -3,108 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="headfoot.css">
     <title>My Cart</title>
 </head>
 <body>
+
+ <!-- Nav bar -->
+    <nav class="nav2">
+        <img src="assets/Images/media/close.png" alt="" class="close" onclick="mainbar()">
+        <img src="assets/Images/media/vastra-w-removebg-preview.png" alt="" class="sidebarlogo">
+        <ul class="sideul">
+            <li class="searchitemli"><input type="text" placeholder="SEARCH ITEM" class="searchitem"></li>
+            <a href=""><li>LOGIN/SIGNUP</li></a>
+            <a href=""><li>CART</li></a>
+            <a href=""><li>WISHLIST</li></a>
+            <a href=""><li>YOUR ORDERS</li></a>
+            <a href=""><li>TRACK ORDER</li></a>
+            <a href=""><li>CUSTOMER CARE</li></a>
+            <a href=""><li>MEN WEARS</li></a>
+            <a href=""><li>WOMEN WEARS</li></a>
+            <a href=""><li>UNISEX WEARS</li></a>
+        </ul>
+    </nav>
+
+    <nav class="nav1">
+        <div class="logo"><img src="assets/Images/media/vastra-w.png" alt=""></div>
+
+        <div class="search">
+            <select name="clothes" id="">
+                <a href=""><option value="1">ALL CATEGORIES</option></a>
+                <a href=""><option value="2">MEN</option></a>
+                <a href=""><option value="3">WOMEN</option></a>
+                <a href=""><option value="4">UNISEX</option></a>
+            </select>
+            <p class="devider">|</p>
+            <input type="text" placeholder="SEARCH" class="searchinput">
+            
+        </div>
+        <button class="navbutton">ENTER</button>
+        <div class="cart">
+            <a href=""><img src="assets/Images/media/account.png" alt=""></a>
+            <a href=""><img src="assets/Images/media/shopping-cart (1).png" alt=""></a>
+            <a href=""><img src="assets/Images/media/heart.png" alt=""></a>
+        </div>
+        <img class="hamburg" src="assets/Images/media/hamburger.png" alt=""  onclick="showsidebar()" >
+    </nav>
+
+    <section class="categories">
+        <div class="categoriesdiv">
+            <a href=""><img src="assets/Images/media/t-shirt.png" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">T-SHIRT</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="assets/Images/media/hoodie.png" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">HOODIE</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="assets/Images/media/formal-shirt.png" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">SHIRT</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="assets/Images/media/crop-top.png" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">CROP-TOP</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="assets/Images/media/shorts.png" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">SHORTS</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="assets/Images/media/woman.png" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">PANTS</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="assets/Images/media/woman (1).png" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">SKIRTS</p>
+        </div>
+    </section>
+
+
     <div class="main">
-        <h1 class="my-cart">My Cart</h1>
+        <h1 class="my-cart">MY CART</h1>
 
         <div class="sections">
             <div class="main-left">
+
                 <!-- Product 1 -->
                 <div class="pro-1">
                     <img src="https://www.snitch.co.in/cdn/shop/files/9334bbb34130aa4f9621f4074ec674fe.webp?v=1715838963&width=1800" alt="project 1st Img">
                     <div class="txt-cotent">
                         <div class="pro-sec1">
                             <h1>STRIPELUSH BLACK STRIPE SHIRT</h1>
-                            <h3>Size: L</h3>
-                            <h3>Color: Black</h3>
-                            <div class="remove">
-                                <h5>Remove</h5>
-                                <h5>Add to Wishlist</h5>
-                            </div>
+                            <h3>SIZE: L</h3>
+                            <h3>COLOR: BLACK</h3>
                         </div>
+                        
                         <div class="pro-sec2">
-                            <input class="item-quantity" min="1" type="number" value="1">
-                            <h3>Rs. 1,499</h3>
+                            <div class="count">
+                                <img id="decrement" src="assets/Images/substract.png" alt="">
+                                <input class="item-quantity" min="1" type="number" value="1">
+                                <img id="increment" src="assets/Images/plus.png" alt="">
+                            </div>
+                           
                             <h2 class="price">Rs. 1,099</h2>
-                            <h2 class="discount">You Save 27%</h2>
                         </div>
                     </div>
                 </div>
-                <hr>
+
                 <!-- Product 2 -->
                 <div class="pro-1">
                     <img src="https://www.snitch.co.in/cdn/shop/products/4MSS1813-08-M2981_85c0257f-db01-40d6-9829-ac8d7f3abe1b.jpg?v=1682190863&width=1800" alt="project 1st Img">
                     <div class="txt-cotent">
                         <div class="pro-sec1">
                             <h1>DOUBLE CUFF MAROON SHIRT</h1>
-                            <h3>Size: L</h3>
-                            <h3>Color: Maroon</h3>
-                            <div class="remove">
-                                <h5>Remove</h5>
-                                <h5>Add to Wishlist</h5>
-                            </div>
+                            <h3>SIZE: L</h3>
+                            <h3>COLOR: MAROON</h3>
+                           
                         </div>
                         <div class="pro-sec2">
-                            <input class="item-quantity" min="1" type="number" value="1">
-                            <h3>Rs. 1,499</h3>
+                            <div class="count">
+                                <img id="decrement" src="assets/Images/substract.png" alt="">
+                                <input class="item-quantity" min="1" type="number" value="1">
+                                <img id="increment" src="assets/Images/plus.png" alt="">
+                            </div>
+                           
                             <h2 class="price">Rs. 1,099</h2>
-                            <h2 class="discount">You Save 27%</h2>
                         </div>
                     </div>
                 </div>
-                <hr>
+
                 <!-- Product 3 -->
                 <div class="pro-1">
                     <img src="https://www.snitch.co.in/cdn/shop/products/Augusto_28thDec9031.jpg?v=1673355934&width=1800">
                     <div class="txt-cotent">
                         <div class="pro-sec1">
                             <h1>BUZAU BLACK SHIRT</h1>
-                            <h3>Size: L</h3>
-                            <h3>Color: Black</h3>
-                            <div class="remove">
-                                <h5>Remove</h5>
-                                <h5>Add to Wishlist</h5>
-                            </div>
+                            <h3>SIZE: L</h3>
+                            <h3>COLOR: BLACK</h3>
                         </div>
                         <div class="pro-sec2">
-                            <input class="item-quantity" min="1" type="number" value="1">
-                            <h3>Rs. 1,499</h3>
+                            <div class="count">
+                                <img id="decrement" src="assets/Images/substract.png" alt="">
+                                <input class="item-quantity" min="1" type="number" value="1">
+                                <img id="increment" src="assets/Images/plus.png" alt="">
+                            </div>
+                           
                             <h2 class="price">Rs. 1,099</h2>
-                            <h2 class="discount">You Save 27%</h2>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- bill section -->
             <div class="main-right">
                 <div class="bill">
-                    <h1>The total amount of</h1>
                     <div class="bill-data">
-                        <h4>Amount</h4>
-                        <span id="total-amount">0.00</span>
+                        <h4>AMOUNT</h4>
+                    <span id="total-amount">0.00</span>
                     </div>
-                    <div class="bill-data">
-                        <h4>CGST (9%)</h4>
-                        <span id="cgst-amount">0.00</span>
-                    </div>  
-                    <div class="bill-data">
-                        <h4>SGST (9%)</h4>
-                        <span id="sgst-amount">0.00</span>
-                    </div> 
-                    <hr>
-                    <div class="bill-data">
-                        <h4>Total</h4>
-                        <span id="final-total">0.00</span>
-                    </div> 
-                    <button>Go to Checkout</button>
+                    <h6>TAX INCLUDED AND SHIPPING CALCULATED AT CHECKOUT</h6>
+                    <div class="gift-card">
+                        <input type="checkbox" name="giftCard" id="giftCard">
+                        <h4>
+                            I HAVE A GIFT CARD</h4>
+                    </div>
+                    
+                    <button class="navbutton">PROCEED TO CHECKOUT</button>
+                    <h5 class="Returns">FREE RETURNS ON ALL ORDERS*</h5>
+                    <img src="https://cdn.shopify.com/s/files/1/0661/7423/files/payment-icon.png?v=1687154639&width=400" alt="">
                 </div>
+
                 <div class="apply-coupon">
-                    <h1>Apply Coupon</h1>
                     <div class="fields">
-                        <input type="text" id="promo-code" placeholder="Promo Code">
-                        <h3 id="apply-coupon">Apply</h3>
+                        <input type="text" id="promo-code" placeholder="APPLY PROMO CODE">
+                        <button id="apply-coupon" class="navbutton">APPY</button>
                     </div>
                     <h3 class="invalid"></h3>
                 </div>
@@ -112,6 +184,65 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+
+    <!-- footer -->
+    <footer>
+        <div class="footerdiv1">
+            <div class="shopping">
+                <p class="heading">SHOPPING</p>
+                <ul>
+                    <a href=""><li>TSHIRT</li></a><br>
+                    <a href=""><li>SHIRT</li></a><br>
+                    <a href=""><li>HOODIE</li></a><br>
+                    <a href=""><li>SHORTS</li></a><br>
+                    <a href=""><li>SKIRTS</li></a><br>
+                    <a href=""><li>TROUSERS</li></a><br>
+                    <a href=""><li>CROPTOP</li></a><br>
+                    <a href=""><li>SKIRT</li></a><br>
+                    <a href=""><li>CHINOS</li></a><br>
+                </ul>
+            </div>
+            <div class="orderdetails">
+                <p class="heading">ORDER DETAILS</p>
+                <ul>
+                    <a href=""><li>TRACKORDER</li></a><br>
+                    <a href=""><li>CUSTOMER CARE</li></a><br>
+                    <a href=""><li>WISH LIST</li></a><br>
+                    <a href=""><li>LIKED ITEMS</li></a><br>
+                    <a href=""><li>CART</li></a><br>
+                    <a href=""><li>YOUR ORDERS</li></a><br>
+                </ul>
+            </div>
+        </div>
+        <hr class="footerhr">
+        <div class="footerdiv2">
+            <div class="reachtous">
+                <p class="heading">CONTACTS</p>
+                <div class="contact">
+                <a class="ho" href=""><img class="contactimg" src="assets/Images/media/whatsapp.png" alt=""></a>
+                <a class="ho" href=""><img class="contactimg" src="assets/Images/media/instagram.png" alt=""></a>
+                <a href=""><img class="contactimg" src="assets/Images/media/social.png" alt=""></a>
+                <a class="ho" href=""><img class="contactimg" src="assets/Images/media/youtube.png" alt=""></a>
+                </div>
+                
+            </div>
+            <div class="customercare">
+                <img src="assets/Images/media/vastra-b-removebg-preview (1).png " alt="" class="footerimg">
+                <p class="cc">CUSTOMER CARE : <br> 882888**50</p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="cart.js"></script>
+
+    <script>
+        function mainbar(){
+            document.querySelector('.nav2').style.display = 'none'; 
+        }
+        function showsidebar(){
+            document.querySelector('.nav2').style.display = 'flex';
+        }
+    </script>
 </body>
 </html>
