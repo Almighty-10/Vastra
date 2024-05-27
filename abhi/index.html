@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="media/vastra_lgo-removebg-preview.png">
 
     <title>home</title>
 
@@ -561,17 +562,19 @@
         <div class="logo"><img src="media/vastra-w.png" alt=""></div>
 
         <div class="search">
-            <select name="clothes" id="">
-                <a href=""><option value="1">ALL CATEGORIES</option></a>
-                <a href=""><option value="2">MEN</option></a>
-                <a href=""><option value="3">WOMEN</option></a>
-                <a href=""><option value="4">UNISEX</option></a>
+            <select name="" id="clothes">
+                <option value="1">ALL CATEGORIES</option>
+                <option value="2">MEN</option>
+                <option value="3">WOMEN</option>
+                <option value="4">UNISEX</option>
             </select>
             <p class="devider">|</p>
             <input type="text" placeholder="SEARCH" class="searchinput">
             
-        </div>
-        <button class="navbutton">ENTER</button>
+        </div> 
+
+        <button class="navbutton" onclick="search()" >ENTER</button>
+
         <div class="cart">
             <a href=""><img src="media/account.png" alt=""></a>
             <a href=""><img src="media/shopping-cart (1).png" alt=""></a>
@@ -766,6 +769,26 @@
                 }
                 function showsidebar(){
                     document.querySelector('.nav2').style.display = 'flex';
+                }
+            </script>
+
+            <script>
+                function search(){
+                    const cloths = document.getElementById('clothes').value;
+                    if(cloths == "1"){
+                        window.location.href = "try.html";
+                    }
+                    else if(cloths == "2"){
+                        window.location.href = "try.html";
+                    }
+                    else if(cloths == "3"){
+                        window.location.href = "try.html";
+                    }
+                    else if(cloths == "4"){
+                        window.location.href = "try.html";
+                    }
+                    
+                    
                 }
             </script>
 
