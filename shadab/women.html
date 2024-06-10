@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="headfoot.css">
     <link rel="stylesheet" href="women.css">
-    <link rel="icon" href="media/vastra-w.png">
+    <link rel="icon" href="media/vastra_lgo-removebg-preview.png">
     <title>Vastra Clothing</title>
 </head>
 <body>
     <!---------------------------NAVBAR--------------------------------------------------------------------------------------------------->
     <nav class="nav2">
-        <img src="media/close.png" alt="" class="close" onclick="mainbar()">
-        <img src="media/vastra-w-removebg-preview.png" alt="" class="sidebarlogo">
+        <img src="abhi/media/close.png" alt="" class="close" onclick="mainbar()">
+        <img src="abhi/media/vastra-w-removebg-preview.png" alt="" class="sidebarlogo">
         <ul class="sideul">
             <li class="searchitemli"><input type="text" placeholder="SEARCH ITEM" class="searchitem"></li>
             <a href=""><li>LOGIN/SIGNUP</li></a>
@@ -21,9 +21,9 @@
             <a href=""><li>YOUR ORDERS</li></a>
             <a href=""><li>TRACK ORDER</li></a>
             <a href=""><li>CUSTOMER CARE</li></a>
-            <a href=""><li>MEN WEARS</li></a>
-            <a href=""><li>WOMEN WEARS</li></a>
-            <a href=""><li>UNISEX WEARS</li></a>
+            <a href="men.html"><li>MEN WEARS</li></a>
+            <a href="women.html"><li>WOMEN WEARS</li></a>
+            <a href="unisex.html"><li>UNISEX WEARS</li></a>
         </ul>
     </nav>
 
@@ -33,9 +33,9 @@
         <div class="search">
             <select name="clothes" id="">
                 <a href=""><option value="1">ALL CATEGORIES</option></a>
-                <a href=""><option value="2">MEN</option></a>
-                <a href=""><option value="3">WOMEN</option></a>
-                <a href=""><option value="4">UNISEX</option></a>
+                <a href="men.html"><option value="2">MEN</option></a>
+                <a href="women.html"><option value="3">WOMEN</option></a>
+                <a href="unisex.html"><option value="4">UNISEX</option></a>
             </select>
             <p class="devider">|</p>
             <input type="text" placeholder="SEARCH" class="searchinput">
@@ -52,15 +52,15 @@
 
     <section class="categories">
         <div class="categoriesdiv">
-            <a href=""><img src="media/sh-men.png" alt="" class="categoriesimg"></a>
+            <a href="men.html"><img src="media/sh-men.png" alt="" class="categoriesimg"></a>
             <p class="categoriesp">MEN</p>
         </div>
         <div class="categoriesdiv">
-            <a href=""><img src="media/sh-women.png" alt="" class="categoriesimg"></a>
+            <a href="women.html"><img src="media/sh-women.png" alt="" class="categoriesimg"></a>
             <p class="categoriesp">WOMEN</p>
         </div>
         <div class="categoriesdiv">
-            <a href=""><img src="media/sh-unisex.png" alt="" class="categoriesimg"></a>
+            <a href="unisex.html"><img src="media/sh-unisex.png" alt="" class="categoriesimg"></a>
             <p class="categoriesp">UNISEX</p>
         </div>
     </section>
@@ -301,12 +301,33 @@
 </footer>
 
 
+
 <script>
     function mainbar(){
         document.querySelector('.nav2').style.display = 'none'; 
     }
     function showsidebar(){
         document.querySelector('.nav2').style.display = 'flex';
+    }
+</script>
+
+<script>
+    function search(){
+        const cloths = document.getElementById('clothes').value;
+        if(cloths == "1"){
+            window.location.href = "try.html";
+        }
+        else if(cloths == "2"){
+            window.location.href = "shadab/men.html";
+        }
+        else if(cloths == "3"){
+            window.location.href = "shadab/women.html";
+        }
+        else if(cloths == "4"){
+            window.location.href = "shadab/unisex.html";
+        }
+        
+        
     }
 </script>
 
