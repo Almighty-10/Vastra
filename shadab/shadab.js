@@ -29,7 +29,7 @@ function redirectOnChange() {
     switch (cloths) {
         case "1":
             // Redirect to search page with all categories and search query
-            redirectUrl = `search.html?q=${encodeURIComponent(searchInput)}`;
+            redirectUrl = `unisex.html?q=${encodeURIComponent(searchInput)}`;
             break;
         case "2":
             // Redirect to men category page with search query
