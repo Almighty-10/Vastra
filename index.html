@@ -37,16 +37,17 @@
         <div class="logo"><img src="abhi/media/vastra-w.png" alt=""></div>
 
         <div class="search">
-            <select name="" id="clothes">
+            <select id="clothes" onchange="redirectOnChange()">
                 <option value="1">ALL CATEGORIES</option>
                 <option value="2">MEN</option>
                 <option value="3">WOMEN</option>
                 <option value="4">UNISEX</option>
             </select>
-            <p class="devider">|</p>
-            <input type="text" placeholder="SEARCH" class="searchinput">
-            
-        </div> 
+            <p class="divider">|</p>
+            <input type="text" id="searchInput" placeholder="SEARCH" class="searchinput">
+        </div>
+        
+         
 
         <button class="navbutton" onclick="search()" >ENTER</button>
 
@@ -248,23 +249,40 @@
             </script>
 
             <script>
-                function search(){
+                function redirectOnChange() {
                     const cloths = document.getElementById('clothes').value;
-                    if(cloths == "1"){
-                        window.location.href = "try.html";
+                    const searchInput = document.getElementById('searchInput').value.trim(); // Trim whitespace
+                
+                    let redirectUrl;
+                
+                    switch (cloths) {
+                        case "1":
+                            // Redirect to search page with all categories
+                            redirectUrl = `search.html?q=${encodeURIComponent(searchInput)}`;
+                            break;
+                        case "2":
+                            // Redirect to men category page
+                            redirectUrl = `shadab/men.html?q=${encodeURIComponent(searchInput)}`;
+                            break;
+                        case "3":
+                            // Redirect to women category page
+                            redirectUrl = `shadab/women.html?q=${encodeURIComponent(searchInput)}`;
+                            break;
+                        case "4":
+                            // Redirect to unisex category page
+                            redirectUrl = `shadab/unisex.html?q=${encodeURIComponent(searchInput)}`;
+                            break;
+                        default:
+                            // Handle unexpected case
+                            console.error("Invalid selection");
+                            return;
                     }
-                    else if(cloths == "2"){
-                        window.location.href = "try.html";
-                    }
-                    else if(cloths == "3"){
-                        window.location.href = "shadab/women.html";
-                    }
-                    else if(cloths == "4"){
-                        window.location.href = "shadab/unisex.html";
-                    }
-                    
-                    
+                
+                    // Perform the redirect
+                    window.location.href = redirectUrl;
                 }
+                
+                
             </script>
 
             

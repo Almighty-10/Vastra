@@ -35,16 +35,16 @@
         </div>
 
         <div class="search">
-            <select name="clothes" id="">
-                <a href=""><option value="1">ALL CATEGORIES</option></a>
-                <a href="men.html"><option value="2">MEN</option></a>
-                <a href="women.html"><option value="3">WOMEN</option></a>
-                <a href="unisex.html"><option value="4">UNISEX</option></a>
+            <select id="clothes" onchange="redirectOnChange()">
+                <option value="1">ALL CATEGORIES</option>
+                <option value="2">MEN</option>
+                <option value="3">WOMEN</option>
+                <option value="4">UNISEX</option>
             </select>
-            <p class="devider">|</p>
-            <input type="text" placeholder="SEARCH" class="searchinput">
-            
+            <p class="divider">|</p>
+            <input type="text" id="searchInput" placeholder="SEARCH" class="searchinput">
         </div>
+
         <button class="navbutton">ENTER</button>
         <div class="cart">
             <a href=""><img src="media/account.png" alt=""></a>
@@ -270,28 +270,7 @@
     </div>
     
 </footer>
-
-
-<script>
-    function mainbar(){
-        document.querySelector('.nav2').style.display = 'none'; 
-    }
-    function showsidebar(){
-        document.querySelector('.nav2').style.display = 'flex';
-    }
-</script>
-
-
-<script>
-    function toggleHeart(element) {
-        const img = element.querySelector('img');
-        if (img.src.includes('heart.png')) {
-            img.src = 'shad_images/heart (1).png';
-        } else {
-            img.src = 'shad_images/heart.png';
-        }
-    }
-</script>
+<script src="shadab.js"></script>
 </body>
 </html>
 
