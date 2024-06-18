@@ -11,10 +11,10 @@ function showsidebar() {
 // Function to toggle the heart icon between two images
 function toggleHeart(element) {
     const img = element.querySelector('img');
-    if (img.src.includes('heart.png')) {
-        img.src = 'shad_images/heart (1).png'; // Change to filled heart icon
+    if (img.src.includes('heart.webp')) {
+        img.src = 'shad_images/heart (1).webp'; // Change to filled heart icon
     } else {
-        img.src = 'shad_images/heart.png'; // Change to empty heart icon
+        img.src = 'shad_images/heart.webp'; // Change to empty heart icon
     }
 }
 
