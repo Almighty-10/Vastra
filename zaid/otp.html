@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="otp.css">
+    <title>Account - VASTRA</title>
+    <script>
+       function otp(){
+        const input = document.getElementById('number').value;
+        const error = document.getElementById('error');
+        
+        if(input.length !== 10 || input===""){
+            error.style.display="block";
+        }
+        else{
+            error.style.display="none";
+        }
+       }
+    </script>
+   
+</head>
+<body>
+    
+    <div class="a">
+        <p class="heading">LOGIN WITH OTP</p>
+        <p class="sentence">Please enter your 10 digit mobile number</p>
+        <div class="input">
+            <input type="number" class="number" id="number" placeholder="Phone Number">
+        </div>
+        <div class="errormessage" id="error">Please enter a valid number to continue</div>
+        <div class="message" id="message"></div>
+        <button class="otp" onclick="otp()" >Request OTP</button>
+        <p class="sentence1">A 6 digit OTP will be sent to your phone number</p>
+        <div class="signup">
+            <div class="line1"></div>
+            <p class="sign">Or Sign-in with</p>
+            <div class="line2"></div>
+        </div>
+        <a href="email.html" class="link">
+       <button class="email-button">
+         Email
+       </button>
+    </a>
+    </div>
+    
+</body>
+</html>

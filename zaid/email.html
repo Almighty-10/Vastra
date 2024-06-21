@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="email.css">
+    <title>Account - VASTRA</title>
+    <script>
+        function email(){
+            const inputemail = document.getElementById('email').value;
+            const error = document.getElementById('error');
+
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if(inputemail=== "" ||  !emailPattern.test(inputemail) ) {
+                error.style.display= "block";
+            }
+            else
+            {
+                error.style.display="none";
+            }
+
+        }
+       
+
+    </script>
+   
+</head>
+<body>
+    <div class="a">
+        <p class="heading">LOGIN WITH OTP</p>
+        <p class="sentence">Please enter your email</p>
+        <div class="input">
+            <input type="email" class="number" id="email" placeholder="Email">
+        </div>
+        <div class="error-message" id="error">Please enter a valid email to continue</div>
+        <div class="message" id="message"></div>
+        <button class="otp" onclick="email()" >Request OTP</button>
+        <p class="sentence1">A 6 digit OTP will be sent to your email address</p>
+        <div class="signup">
+            <div class="line1"></div>
+            <p class="sign">Or Sign-in with</p>
+            <div class="line2"></div>
+        </div>
+        <a href="otp.html" class="link">
+            <button class="email-button">
+              Phone
+            </button>
+    </a>
+    </div>
+    
+</body>
+</html>
