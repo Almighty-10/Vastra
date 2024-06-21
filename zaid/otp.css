@@ -5,16 +5,17 @@ body{
 
 }
 .heading{
-    font-size: 2.1rem;
+    font-size: 3rem;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
-    height: 12px;
+    height: 15px;
 }
 .sentence{
     font-size: 0.65rem;
     font-weight: 300;
     text-align: center;
+    margin-top: 2%;
     
 }
 input::-webkit-outer-spin-button,
@@ -52,17 +53,19 @@ input::-webkit-inner-spin-button {
     border-style: outset;
     display: block;
     margin: auto;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 .sentence1{
     font-size: 0.58rem;
     font-weight: 200;
     text-align: center;
+    margin-top: 1%;
 }
 .signup{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 1%;
     
 }
 .line1{
@@ -72,6 +75,7 @@ input::-webkit-inner-spin-button {
     position: relative;
     top: 21px;
     right: 2%;
+    margin-top: 1%;
 }
 .sign{
     
@@ -97,6 +101,7 @@ input::-webkit-inner-spin-button {
     border-radius: 11px;
     display: block;
     margin: auto;
+    margin-top: 2%;
     box-shadow: none;
     outline: none;
 }

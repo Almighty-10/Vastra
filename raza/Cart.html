@@ -15,37 +15,40 @@
         <img src="assets/Images/media/vastra-w-removebg-preview.webp" alt="" class="sidebarlogo">
         <ul class="sideul">
             <li class="searchitemli"><input type="text" placeholder="SEARCH ITEM" class="searchitem"></li>
-            <a href=""><li>LOGIN/SIGNUP</li></a>
-            <a href=""><li>CART</li></a>
-            <a href=""><li>WISHLIST</li></a>
+            <a href="../zaid/otp.html"><li>LOGIN/SIGNUP</li></a>
+            <a href="../raza/Cart.html"><li>CART</li></a>
+            <a href="../raza/wishlist.html"><li>WISHLIST</li></a>
             <a href=""><li>YOUR ORDERS</li></a>
             <a href=""><li>TRACK ORDER</li></a>
             <a href=""><li>CUSTOMER CARE</li></a>
-            <a href=""><li>MEN WEARS</li></a>
-            <a href=""><li>WOMEN WEARS</li></a>
-            <a href=""><li>UNISEX WEARS</li></a>
+            <a href="../shadab/men.html"><li>MEN WEARS</li></a>
+            <a href="../shadab/women.html"><li>WOMEN WEARS</li></a>
+            <a href="../shadab/unisex.html"><li>UNISEX WEARS</li></a>
         </ul>
     </nav>
 
     <nav class="nav1">
-        <div class="logo"><img src="assets/Images/media/vastra-w.webp" alt=""></div>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="assets/images/media/vastra-w.webp" alt="">
+            </a>
+        </div>
 
         <div class="search">
-            <select name="clothes" id="">
-                <a href=""><option value="1">ALL CATEGORIES</option></a>
-                <a href=""><option value="2">MEN</option></a>
-                <a href=""><option value="3">WOMEN</option></a>
-                <a href=""><option value="4">UNISEX</option></a>
+            <select id="clothes" onchange="redirectOnChange()">
+                <option value="1">ALL CATEGORIES</option>
+                <option value="2">MEN</option>
+                <option value="3">WOMEN</option>
+                <option value="4">UNISEX</option>
             </select>
-            <p class="devider">|</p>
-            <input type="text" placeholder="SEARCH" class="searchinput">
-            
+            <p class="divider">|</p>
+            <input type="text" id="searchInput" placeholder="SEARCH" class="searchinput">
         </div>
         <button class="navbutton">ENTER</button>
         <div class="cart">
-            <a href=""><img src="assets/Images/media/account.webp" alt=""></a>
-            <a href=""><img src="assets/Images/media/shopping-cart (1).webp" alt=""></a>
-            <a href=""><img src="assets/Images/media/heart.webp" alt=""></a>
+            <a href="../zaid/otp.html"><img src="assets/Images/media/account.webp" alt=""></a>
+            <a href="Cart.html"><img src="assets/Images/media/shopping-cart (1).webp" alt=""></a>
+            <a href="wishlist.html"><img src="assets/Images/media/heart.webp" alt=""></a>
         </div>
         <img class="hamburg" src="assets/Images/media/hamburger.webp" alt=""  onclick="showsidebar()" >
     </nav>
@@ -243,6 +246,43 @@
         function showsidebar(){
             document.querySelector('.nav2').style.display = 'flex';
         }
+    </script>
+    <script>
+        // Function to handle redirection based on dropdown selection and search input
+function redirectOnChange() {
+    const cloths = document.getElementById('clothes').value; // Get selected category
+    const searchInput = document.getElementById('searchInput').value.trim(); // Get trimmed search input
+
+    let redirectUrl;
+
+    // Determine the redirection URL based on the selected category
+    switch (cloths) {
+        case "1":
+            // Redirect to search page with all categories and search query
+            redirectUrl = `../shadab/unisex.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        case "2":
+            // Redirect to men category page with search query
+            redirectUrl = `../shadab/men.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        case "3":
+            // Redirect to women category page with search query
+            redirectUrl = `../shadab/women.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        case "4":
+            // Redirect to unisex category page with search query
+            redirectUrl = `../shadab/unisex.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        default:
+            // Handle unexpected case (should not normally occur with valid dropdown values)
+            console.error("Invalid selection");
+            return;
+    }
+
+    // Perform the redirect to the constructed URL
+    window.location.href = redirectUrl;
+}
+
     </script>
 </body>
 </html>
