@@ -25,7 +25,7 @@ body {
 #container1 ,#container2 ,#container3 ,#container4 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -145,7 +145,7 @@ body {
         padding: 7px;
     }
     .products{
-        padding-left: 4.5%;
+        padding-left: 7%;
         text-decoration: none;
         color: #000000ce;
         font-size: 1rem;
@@ -209,5 +209,29 @@ body {
         text-decoration: none;
         color: #000000ce;
         font-size: 1.5rem;
+    }
+}
+
+/* 5 divs in a row for very large screens */
+@media screen and (min-width: 1600px) {
+    .box {
+        width: calc(20% - 40px);
+        height: 500px;
+    }
+    .heart {
+        height: 45px;
+        width: 45px;
+        left: 85%;
+        bottom: 5%;
+    }
+    .price {
+        font-size: 2em;
+    }
+    .content {
+        font-size: 1.5em;
+    }
+    .add_cart_btn {
+        font-size: 1.5em;
+        padding: 10px;
     }
 }

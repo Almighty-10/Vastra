@@ -8,7 +8,6 @@ body {
     font-family: "Roboto Mono", monospace;
 }
 
-
 .unisex{
     text-align: center;
     margin-top: 2%;
@@ -22,20 +21,20 @@ body {
     font-size: 1.5rem;
 }
 
-#container1 ,#container2 ,#container3 ,#container4 ,#container5{
+#container1, #container2, #container3, #container4, #container5 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
 .box {
-    width: calc(23% - 60px); 
-    height: 450px; 
+    width: calc(23% - 60px);
+    height: 450px;
     margin: 10px;
-    padding: 10px; 
+    padding: 10px;
     border: 1px solid black;
-    box-shadow: 0px 0px 10px #0000001e ;
+    box-shadow: 0px 0px 10px #0000001e;
     text-align: center;
     border-radius: 10px;
     background-color: #fff;
@@ -43,7 +42,6 @@ body {
     box-sizing: border-box;
     position: relative;
 }
-
 
 .box:hover {
     background-color: rgba(128, 128, 128, 0.151);
@@ -67,10 +65,9 @@ body {
     text-align: left;
 }
 
-
 .add_cart_btn {
     font-size: 1.2em;
-    width:80%;
+    width: 80%;
     padding: 8px;
     border-radius: 10px 10px;
     background-color: #000;
@@ -80,13 +77,12 @@ body {
     position: sticky;
 }
 
-
 .heart {
     border-radius: 5px;
     position: absolute;
     height: 40px;
     width: 40px;
-    left: 80%; 
+    left: 80%;
     bottom: 4%;
     cursor: pointer;
 }
@@ -101,7 +97,7 @@ body {
 /* 3 divs in a row for mid-wide screens */
 @media screen and (max-width: 1200px) {
     .box {
-        width: calc(30% - 20px); 
+        width: calc(30% - 20px);
         height: 400px;
     }
     .heart {
@@ -120,7 +116,7 @@ body {
         font-size: 0.9em;
         padding: 8px;
     }
-    .products{
+    .products {
         padding-left: 8%;
         text-decoration: none;
         color: #000000ce;
@@ -138,14 +134,14 @@ body {
         height: 25px;
         width: 25px;
         bottom: 10px;
-        left: 80%;
+        left: 77%;
     }
     .add_cart_btn {
         font-size: 0.8em;
-        padding: 7px;
+        padding: 5.5px;
     }
-    .products{
-        padding-left: 3.5%;
+    .products {
+        padding-left: 5%;
         text-decoration: none;
         color: #000000ce;
         font-size: 0.9rem;
@@ -160,42 +156,35 @@ body {
     }
 }
 
-
 /* 1 div in a row for very small screens like mobile watches */
 @media screen and (max-width: 320px) {
     .box {
-        width: calc(100% - 20px); /* Full width minus margin */
-        height: 100px; /* Adjust height to content */
+        width: calc(100% - 20px);
+        height: 100px;
     }
     .heart {
         height: 20px;
         width: 20px;
-        bottom: 10px;
+        bottom: 2%;
         left: 75%;
-        bottom: 2%; /* Adjust positioning to fit layout */
     }
-
     .image {
         height: 70%;
         width: 100%;
     }
-    
     .content {
         font-size: 0.2EM;
         color: #000;
         text-align: left;
     }
-    
     .price {
         font-size: 0.2EM;
         color: #000000ce;
         text-align: left;
     }
-    
-    
     .add_cart_btn {
         font-size: 0.4em;
-        width:70%;
+        width: 70%;
         padding: 2px;
         border-radius: 5px 5px;
         background-color: #000;
@@ -204,10 +193,34 @@ body {
         transition: background-color 0.3s;
         position: sticky;
     }
-    .products{
+    .products {
         padding-left: 2%;
         text-decoration: none;
         color: #000000ce;
         font-size: 0.5rem;
+    }
+}
+
+/* 5 divs in a row for very large screens */
+@media screen and (min-width: 1600px) {
+    .box {
+        width: calc(20% - 40px);
+        height: 500px;
+    }
+    .heart {
+        height: 45px;
+        width: 45px;
+        left: 85%;
+        bottom: 5%;
+    }
+    .price {
+        font-size: 2em;
+    }
+    .content {
+        font-size: 1.5em;
+    }
+    .add_cart_btn {
+        font-size: 1.5em;
+        padding: 10px;
     }
 }
