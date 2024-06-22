@@ -4,17 +4,18 @@ body{
     font-family: "Roboto Mono", monospace;
 
 }
-.heading{
-    font-size: 2.1rem;
+.heading-top{
+    font-size: 2rem;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 3%;
     text-align: center;
-    height: 12px;
+    
 }
 .sentence{
-    font-size: 0.65rem;
+    font-size: 0.58rem;
     font-weight: 300;
     text-align: center;
+    margin-top: 5px;
     
 }
 input::-webkit-outer-spin-button,
@@ -37,6 +38,7 @@ input::-webkit-inner-spin-button {
     align-items:center ;
     border-radius: 8px;
     padding-left: 5px;
+    margin-top: 10px;
 }
 ::placeholder{
     color: grey;
@@ -58,6 +60,7 @@ input::-webkit-inner-spin-button {
     font-size: 0.58rem;
     font-weight: 200;
     text-align: center;
+    margin-top: 1%;
 }
 .signup{
     display: flex;
@@ -71,10 +74,10 @@ input::-webkit-inner-spin-button {
     height: 0px;
     position: relative;
     top: 21px;
-    right: 2%;
+    right: 1%;
 }
 .sign{
-    
+    margin-top: 12px;
     font-size: 0.82rem;
     text-align: center;
 }
@@ -84,7 +87,7 @@ input::-webkit-inner-spin-button {
     height: 0px;
     position: relative;
    top: 21px; 
-   left: 2%;
+   left: 1%;
    
 }
 .email-button{
@@ -99,6 +102,7 @@ input::-webkit-inner-spin-button {
     margin: auto;
     box-shadow: none;
     outline: none;
+    margin-top: 1%;
 }
 
 .link{
@@ -108,7 +112,7 @@ input::-webkit-inner-spin-button {
 .errormessage{
     color: red;
     text-align: center;
-    font-size: 0.80rem;
+    font-size: 0.65rem;
     display: none;
 
 }
@@ -116,17 +120,17 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width:600px) {
     .sentence{
-        font-size: 0.55rem;
+        font-size: 0.52rem;
         font-weight: 300;
         text-align: center;
+        margin-top: 5px;
         
     }
-    .heading{
+    .heading-top{
         font-size: 2rem;
         font-weight: 700;
-        margin-top: 10%;
+        margin-top: 8%;
         text-align: center;
-        height: 12px;
     }
     .input{
         border: 1px solid rgba(128, 128, 128, 0.622);
@@ -137,6 +141,7 @@ input::-webkit-inner-spin-button {
         align-items:center ;
         border-radius: 8px;
         padding-left: 5px;
+        margin-top: 13px;
     }
     .otp{
         background-color: black;
@@ -162,6 +167,7 @@ input::-webkit-inner-spin-button {
         margin: auto;
         box-shadow: none;
         outline: none;
+        margin-top: 5%;
         
     }
     .line1{
@@ -185,23 +191,30 @@ input::-webkit-inner-spin-button {
         font-size: 0.55rem;
         font-weight: 200;
         text-align: center;
+        margin-top: 10px;
     }
     .errormessage{
         color: red;
         text-align: center;
-        font-size: 0.60rem;
+        font-size: 0.55rem;
         display: none;
     
     }
 }
 @media screen and (max-width:900px)and (min-width:600px){
-
-    .heading{
-        font-size: 2.2rem;
-        font-weight: 700;
-        margin-top: 10%;
+    .sentence{
+        font-size: 0.55rem;
+        font-weight: 300;
         text-align: center;
-        height: 12px;
+        margin-top: 5px;
+        
+    }
+
+    .heading-top{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 6%;
+        text-align: center;
     }
     .input{
         border: 1px solid rgba(128, 128, 128, 0.622);
@@ -212,6 +225,7 @@ input::-webkit-inner-spin-button {
         align-items:center ;
         border-radius: 8px;
         padding-left: 5px;
+        margin-top: 13px;
     }
     .otp{
         background-color: black;
@@ -246,6 +260,8 @@ input::-webkit-inner-spin-button {
         font-size: 0.53rem;
         font-weight: 200;
         text-align: center;
+        margin-top: 10px;
+
     }
     .email-button{
         border: 1px solid rgba(152, 147, 147, 0.638);
@@ -259,6 +275,7 @@ input::-webkit-inner-spin-button {
         margin: auto;
         box-shadow: none;
         outline: none;
+        margin-top: 2%;
         
     }
 }
