@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ecb922eda.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="headfoot.css">
+    <link rel="stylesheet" href="t-shirt-1.css">
+    <link rel="icon" href="media/Vastra-Photos/vastra_lgo-removebg-preview.webp">
+    <title>Product</title>
+</head>
+
+<body>
+    <!---------------------------NAVBAR--------------------------------------------------------------------------------------------------->
+    <nav class="nav2">
+        <img src="media/close.webp" alt="" class="close" onclick="mainbar()">
+        <img src="media/vastra-w-removebg-preview.webp" alt="" class="sidebarlogo">
+        <ul class="sideul">
+            <li class="searchitemli"><input type="text" placeholder="SEARCH ITEM" class="searchitem"></li>
+            <a href="../zaid/otp.html">
+                <li>LOGIN/SIGNUP</li>
+            </a>
+            <a href="../raza/Cart.html">
+                <li>CART</li>
+            </a>
+            <a href="../raza/wishlist.html">
+                <li>WISHLIST</li>
+            </a>
+            <a href="../shadab/men.html">
+                <li>MEN WEARS</li>
+            </a>
+            <a href="../shadab/women.html">
+                <li>WOMEN WEARS</li>
+            </a>
+            <a href="../shadab/unisex.html">
+                <li>UNISEX WEARS</li>
+            </a>
+        </ul>
+    </nav>
+
+    <nav class="nav1">
+        <div class="logo"><img src="media/vastra-w.webp" alt=""></div>
+
+        <div class="search">
+            <select id="clothes" onchange="redirectOnChange()">
+                <option value="1">ALL CATEGORIES</option>
+                <option value="2">MEN</option>
+                <option value="3">WOMEN</option>
+                <option value="4">UNISEX</option>
+            </select>
+            <p class="divider">|</p>
+            <input type="text" id="searchInput" placeholder="SEARCH" class="searchinput">
+        </div>
+
+
+
+        <button class="navbutton" onclick="search()">ENTER</button>
+
+        <div class="cart">
+            <a href="../zaid/otp.html"><img src="media/account.webp" alt=""></a>
+            <a href="../raza/Cart.html"><img src="media/shopping-cart (1).webp" alt=""></a>
+            <a href="../raza/wishlist.html"><img src="media/heart.webp" alt=""></a>
+        </div>
+        <img class="hamburg" src="media/hamburger.webp" alt="" onclick="showsidebar()">
+    </nav>
+
+    <section class="categories">
+        <div class="categoriesdiv">
+            <a href=""><img src="media/t-shirt.webp" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">T-SHIRT</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="media/hoodie.webp" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">HOODIE</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="media/formal-shirt.webp" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">SHIRT</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="media/crop-top.webp" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">CROP-TOP</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="media/shorts.webp" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">SHORTS</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="media/woman.webp" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">PANTS</p>
+        </div>
+        <div class="categoriesdiv">
+            <a href=""><img src="media/woman (1).webp" alt="" class="categoriesimg"></a>
+            <p class="categoriesp">SKIRTS</p>
+        </div>
+    </section>
+    <!-------------------------MAIN BODY----------------------------------------------------------------------------------------------------------------------->
+    <div class="parent-conatiner">
+        <div class="container">
+            <div class="left-column">
+                <img src="media/Vastra-Photos/man/ts man/ts-1.webp" alt="" class="main-img" id="expandedImg">
+                <div class="thumbnail-row">
+                    <img src="media/Vastra-Photos/man/ts man/ts-1.webp" alt="" onclick="changeImage(this)">
+                    <img src="media/Vastra-Photos/man/ts man/ts-2.webp" alt="" onclick="changeImage(this)">
+                    <img src="media/Vastra-Photos/man/ts man/ts-3.webp" alt="" onclick="changeImage(this)">
+                    <img src="media/Vastra-Photos/size chart/SIZE_CHART_TS.webp" alt="" onclick="changeImage(this)">
+                    <!-- <img src="hr4.webp" alt="" onclick="changeImage(this)"> -->
+                    
+                </div>
+            </div>
+            <div class="right-column">
+                <h1>MEN PRINTED ROUND NECK YELLOW T-SHIRT</h1>
+                <p class="price">₹ 499</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <h3 class="brand">BRAND: VASTRA</h3>
+                <div class="size">
+                    <h4>CHOOSE SIZE:</h4>
+                    <div class="size-options">
+                        <div class="size-option" onclick="selectSize(this, 'S')">S</div>
+                        <div class="size-option" onclick="selectSize(this, 'M')">M</div>
+                        <div class="size-option" onclick="selectSize(this, 'L')">L</div>
+                        <div class="size-option" onclick="selectSize(this, 'XL')">XL</div>
+                        <div class="size-option" onclick="selectSize(this, 'XXL')">XXL</div>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> ADD TO CART: ₹ 499</button>
+                </div>
+                <div class="product-details">
+                    <h4>PRODUCT DETAILS</h4>
+                    <p class="description">Vastra Sunshine Yellow T-Shirt</p>
+                    <p class="features">
+                        • 100% high-grade cotton.<br>
+                        • Ensuring exceptional comfort.<br>
+                        • Tailored with a relaxed, classic fit.<br>
+                        • Lightweight, smooth fabric. <br>
+                        • Ideal for warm weather
+                    </p>
+                    </p>
+                    <!-- <div class="para">
+                        <p class="additional-description">
+                            The refined and vibrant yellow color adds a sophisticated touch to any ensemble, making a
+                            distinguished statement. The lightweight, smooth fabric is gentle on the skin, making it
+                            ideal for warm weather or for layering under jackets and blazers. 
+                        </p>
+                    </div> -->
+
+                </div>
+                <button class="buy-now">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------FOOTER------------------------------------------------------------------------------------------------------------->
+
+    <footer>
+        <div class="footerdiv1">
+            <div class="shopping">
+                <p class="heading">SHOPPING</p>
+                <ul>
+                    <a href="">
+                        <li>TSHIRT</li>
+                    </a><br>
+                    <a href="">
+                        <li>SHIRT</li>
+                    </a><br>
+                    <a href="">
+                        <li>HOODIE</li>
+                    </a><br>
+                    <a href="">
+                        <li>SHORTS</li>
+                    </a><br>
+                    <a href="">
+                        <li>SKIRTS</li>
+                    </a><br>
+                    <a href="">
+                        <li>TROUSERS</li>
+                    </a><br>
+                    <a href="">
+                        <li>CROPTOP</li>
+                    </a><br>
+                    <a href="">
+                        <li>SKIRT</li>
+                    </a><br>
+                    <a href="">
+                        <li>CHINOS</li>
+                    </a><br>
+                </ul>
+            </div>
+            <div class="orderdetails">
+                <p class="heading">ORDER DETAILS</p>
+                <ul>
+                    <a href="">
+                        <li>TRACKORDER</li>
+                    </a><br>
+                    <a href="">
+                        <li>CUSTOMER CARE</li>
+                    </a><br>
+                    <a href="">
+                        <li>WISH LIST</li>
+                    </a><br>
+                    <a href="">
+                        <li>LIKED ITEMS</li>
+                    </a><br>
+                    <a href="">
+                        <li>CART</li>
+                    </a><br>
+                    <a href="">
+                        <li>YOUR ORDERS</li>
+                    </a><br>
+                </ul>
+            </div>
+        </div>
+        <hr class="footerhr">
+        <div class="footerdiv2">
+            <div class="reachtous">
+                <p class="heading">CONTACTS</p>
+                <div class="contact">
+                    <a class="ho" href=""><img class="contactimg" src="media/whatsapp.webp" alt=""></a>
+                    <a class="ho" href=""><img class="contactimg" src="media/instagram.webp" alt=""></a>
+                    <a class="ho" href=""><img class="contactimg" src="media/social.webp" alt=""></a>
+                    <a class="ho" href=""><img class="contactimg" src="media/youtube.webp" alt=""></a>
+                </div>
+
+            </div>
+            <div class="customercare">
+                <img src="media/vastra-b-removebg-preview (1).webp" alt="" class="footerimg">
+                <p class="cc">CUSTOMER CARE : <br> 882888**50</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function changeImage(img) {
+            document.getElementById("expandedImg").src = img.src;
+        }
+
+        function selectSize(element, size) {
+            const sizeOptions = document.querySelectorAll('.size-option');
+            sizeOptions.forEach(option => {
+                option.classList.remove('selected');
+            });
+            element.classList.add('selected');
+            document.querySelector('.cart-btn').innerHTML = `<i class="fas fa-shopping-cart"></i> ADD TO CART: ₹ 499 (${size})`;
+        }
+    </script>
+
+    <script>
+        function mainbar() {
+            document.querySelector('.nav2').style.display = 'none';
+        }
+        function showsidebar() {
+            document.querySelector('.nav2').style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>
