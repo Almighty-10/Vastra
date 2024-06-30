@@ -43,6 +43,9 @@ body{
     margin-bottom: 30px;
 }
 
+.item-quantity {
+    font-size: large;
+}
 
 .pro-1 {
     display: flex;
