@@ -42,12 +42,13 @@ body {
     transition: background-color 0.3s;
     box-sizing: border-box;
     position: relative;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
 }
-
 
 .box:hover {
     background-color: rgba(128, 128, 128, 0.151);
     cursor: pointer;
+    transform: scale(1.03); /* Added transform scale */
 }
 
 .image {
@@ -145,10 +146,10 @@ body {
         padding: 7px;
     }
     .products{
-        padding-left: 6%;
+        padding-left: 5%;
         text-decoration: none;
         color: #000000ce;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 

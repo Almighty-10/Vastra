@@ -42,13 +42,15 @@ body {
     transition: background-color 0.3s;
     box-sizing: border-box;
     position: relative;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
 }
-
 
 .box:hover {
     background-color: rgba(128, 128, 128, 0.151);
     cursor: pointer;
+    transform: scale(1.03); /* Added transform scale */
 }
+
 
 .image {
     height: 75%;
@@ -148,7 +150,7 @@ body {
         padding-left: 7%;
         text-decoration: none;
         color: #000000ce;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
