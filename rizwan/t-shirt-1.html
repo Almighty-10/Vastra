@@ -115,8 +115,8 @@
                 </div>
             </div>
             <div class="right-column">
-                <h1>MEN PRINTED ROUND NECK YELLOW T-SHIRT</h1>
-                <p class="price">₹ 499</p>
+                <h1>MEN T-SHIRT</h1>
+                <p class="price">$10.00</p>
                 <div class="rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -136,11 +136,11 @@
                     </div>
                 </div>
                 <div class="add-to-cart">
-                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> ADD TO CART: ₹ 499</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-cart"></i> ADD TO CART: $10.00</button>
                 </div>
                 <div class="product-details">
                     <h4>PRODUCT DETAILS</h4>
-                    <p class="description">Vastra Sunshine Yellow T-Shirt</p>
+                    <p class="description">Vastra Men T-Shirt</p>
                     <p class="features">
                         • 100% high-grade cotton.<br>
                         • Ensuring exceptional comfort.<br>
@@ -265,6 +265,42 @@
         function showsidebar() {
             document.querySelector('.nav2').style.display = 'flex';
         }
+    </script>
+    <script>
+        function redirectOnChange() {
+    const cloths = document.getElementById('clothes').value; // Get selected category
+    const searchInput = document.getElementById('searchInput').value.trim(); // Get trimmed search input
+
+    let redirectUrl;
+
+    // Determine the redirection URL based on the selected category
+    switch (cloths) {
+        case "1":
+            // Redirect to search page with all categories and search query
+            redirectUrl = `../shadab/unisex.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        case "2":
+            // Redirect to men category page with search query
+            redirectUrl = `../shadab/men.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        case "3":
+            // Redirect to women category page with search query
+            redirectUrl = `../shadab/women.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        case "4":
+            // Redirect to unisex category page with search query
+            redirectUrl = `../shadab/unisex.html?q=${encodeURIComponent(searchInput)}`;
+            break;
+        default:
+            // Handle unexpected case (should not normally occur with valid dropdown values)
+            console.error("Invalid selection");
+            return;
+    }
+
+    // Perform the redirect to the constructed URL
+    window.location.href = redirectUrl;
+}
+
     </script>
 </body>
 

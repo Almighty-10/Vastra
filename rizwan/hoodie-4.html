@@ -23,31 +23,22 @@
         <img src="media/vastra-w-removebg-preview.webp" alt="" class="sidebarlogo">
         <ul class="sideul">
             <li class="searchitemli"><input type="text" placeholder="SEARCH ITEM" class="searchitem"></li>
-            <a href="">
+            <a href="../zaid/otp.html">
                 <li>LOGIN/SIGNUP</li>
             </a>
-            <a href="">
+            <a href="../raza/Cart.html">
                 <li>CART</li>
             </a>
-            <a href="">
+            <a href="../raza/wishlist.html">
                 <li>WISHLIST</li>
             </a>
-            <a href="">
-                <li>YOUR ORDERS</li>
-            </a>
-            <a href="">
-                <li>TRACK ORDER</li>
-            </a>
-            <a href="">
-                <li>CUSTOMER CARE</li>
-            </a>
-            <a href="shadab/men.html">
+            <a href="../shadab/men.html">
                 <li>MEN WEARS</li>
             </a>
-            <a href="shadab/women.html">
+            <a href="../shadab/women.html">
                 <li>WOMEN WEARS</li>
             </a>
-            <a href="shadab/unisex.html">
+            <a href="../shadab/unisex.html">
                 <li>UNISEX WEARS</li>
             </a>
         </ul>
@@ -72,9 +63,9 @@
         <button class="navbutton" onclick="search()">ENTER</button>
 
         <div class="cart">
-            <a href=""><img src="media/account.webp" alt=""></a>
-            <a href=""><img src="media/shopping-cart (1).webp" alt=""></a>
-            <a href=""><img src="media/heart.webp" alt=""></a>
+            <a href="../zaid/otp.html"><img src="media/account.webp" alt=""></a>
+            <a href="../raza/Cart.html"><img src="media/shopping-cart (1).webp" alt=""></a>
+            <a href="../raza/wishlist.html"><img src="media/heart.webp" alt=""></a>
         </div>
         <img class="hamburg" src="media/hamburger.webp" alt="" onclick="showsidebar()">
     </nav>
@@ -113,18 +104,18 @@
     <div class="parent-conatiner">
         <div class="container">
             <div class="left-column">
-                <img src="media/Vastra-Photos/man/ts man/ts-10.webp" alt="" class="main-img" id="expandedImg">
+                <img src="media/Vastra-Photos/man/hoddie man/hd-10.webp" alt="" class="main-img" id="expandedImg">
                 <div class="thumbnail-row">
-                    <img src="media/Vastra-Photos/man/ts man/ts-10.webp" alt="" onclick="changeImage(this)">
-                    <img src="media/Vastra-Photos/man/ts man/ts-11.webp" alt="" onclick="changeImage(this)">
-                    <img src="media/Vastra-Photos/man/ts man/ts-12.webp" alt="" onclick="changeImage(this)">
+                    <img src="media/Vastra-Photos/man/hoddie man/hd-10.webp" alt="" onclick="changeImage(this)">
+                    <img src="media/Vastra-Photos/man/hoddie man/hd-11.webp" alt="" onclick="changeImage(this)">
+                    <img src="media/Vastra-Photos/man/hoddie man/hd-12.webp" alt="" onclick="changeImage(this)">
                     <img src="media/Vastra-Photos/size chart/SIZE_CHART_TS.webp" alt="" onclick="changeImage(this)">
                     <!-- <img src="hr4.webp" alt="" onclick="changeImage(this)"> -->
                     
                 </div>
             </div>
             <div class="right-column">
-                <h1>MEN T-SHIRT</h1>
+                <h1>MEN HOODIE</h1>
                 <p class="price">$40.00</p>
                 <div class="rating">
                     <i class="fa-solid fa-star"></i>
@@ -149,13 +140,14 @@
                 </div>
                 <div class="product-details">
                     <h4>PRODUCT DETAILS</h4>
-                    <p class="description">Vastra Men T-Shirt</p>
+                    <p class="description">Vastra Hoodie</p>
                     <p class="features">
                         • 100% high-grade cotton.<br>
                         • Ensuring exceptional comfort.<br>
                         • Tailored with a relaxed, classic fit.<br>
                         • Lightweight, smooth fabric. <br>
                         • Ideal for warm weather
+                    </p>
                     </p>
                     <!-- <div class="para">
                         <p class="additional-description">
@@ -274,7 +266,7 @@
             document.querySelector('.nav2').style.display = 'flex';
         }
     </script>
-     <script>
+    <script>
         function redirectOnChange() {
     const cloths = document.getElementById('clothes').value; // Get selected category
     const searchInput = document.getElementById('searchInput').value.trim(); // Get trimmed search input
